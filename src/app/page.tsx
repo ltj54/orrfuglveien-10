@@ -1,3 +1,5 @@
+import StreetView from "./StreetView";
+
 const ownerTopics = [
   ["Kontakt", "Spørsmål om drift og vedlikehold."],
   ["Husordensregler", "Regler og fellesinformasjon."],
@@ -30,17 +32,7 @@ export default function Home() {
     <main id="top">
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero-copy"><p className="eyebrow">FOR EIERE, KJØPERE OG MEGLERE</p><h1 id="hero-title">Orrfuglveien <em>10.</em></h1><p className="lede">Kontakt, fellesdokumenter og opplysninger ved salg.</p><div className="hero-actions"><a className="button dark" href={anchors.owners}>For eiere</a><a className="button light" href={anchors.sales}>Ved kjøp og salg</a></div></div>
-        <div className="address-panel">
-          <iframe
-            title="Street View ved Orrfuglveien 10"
-            src="https://www.google.com/maps/embed?pb=!4v1793787924927!6m8!1m7!1sUi22pjkXohwGgEOetazGMw!2m2!1d69.07701724540962!2d18.52321393000696!3f346.15088!4f0!5f0.7820865974627469"
-            loading="lazy"
-            referrerPolicy="strict-origin-when-cross-origin"
-            tabIndex={-1}
-          />
-          <a className="map-overlay-link" href="https://www.google.com/maps/search/?api=1&amp;query=Orrfuglveien+10%2C+9325+Bardufoss" target="_blank" rel="noopener noreferrer">Åpne i Google Maps</a>
-          <span className="image-caption">Ved Orrfuglveien 10 · Google Street View, juli 2025</span>
-        </div>
+        <StreetView />
       </section>
       <section className="audience-section" id="eiere" aria-labelledby="owner-title"><div className="section-heading"><p className="eyebrow">FOR EIERE</p><h2 id="owner-title">Praktisk informasjon.</h2></div><TopicList items={ownerTopics} /></section>
       <section className="audience-section sale-section" id="kjop-og-salg" aria-labelledby="sale-title"><div className="section-heading"><p className="eyebrow">FOR KJØPERE OG MEGLERE</p><h2 id="sale-title">Opplysninger ved salg.</h2></div><TopicList items={saleTopics} /></section>
