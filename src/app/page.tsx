@@ -2,7 +2,6 @@ import StreetView from "./StreetView";
 
 const ownerTopics = [
   ["Kontakt", "Spørsmål om drift og vedlikehold."],
-  ["Husordensregler", "Regler og fellesinformasjon."],
   ["Dokumenter", "Fellesdokumenter med dato og versjon."],
 ];
 
