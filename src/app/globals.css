@@ -20,3 +20,4 @@
 .map-open-link:hover .map-activation,.map-open-link:focus-visible .map-activation{background:var(--accent);color:white;outline:2px solid var(--paper);outline-offset:2px}
 .map-open-link .map-activation{display:inline-block;pointer-events:none}
 .image-caption{pointer-events:none}
+.form-card{box-shadow:none}
