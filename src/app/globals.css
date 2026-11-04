@@ -21,3 +21,14 @@
 .map-open-link .map-activation{display:inline-block;pointer-events:none}
 .image-caption{pointer-events:none}
 .form-card{box-shadow:none}
+.registry-section{max-width:1400px;margin:auto;padding:65px max(4vw,24px);display:grid;grid-template-columns:.8fr 1fr;gap:7vw;border-bottom:1px solid var(--line)}
+.registry-section h2{font-family:'Libre Baskerville',Georgia,serif;font-size:clamp(2.2rem,3.3vw,3.7rem);font-weight:400;letter-spacing:-.045em;line-height:1.17}
+.registry-details dl{margin:0;border-top:1px solid var(--line)}
+.registry-details dl div{display:grid;grid-template-columns:165px 1fr;gap:18px;padding:15px 0;border-bottom:1px solid var(--line)}
+.registry-details dt{color:var(--muted);font-size:.85rem}
+.registry-details dd{margin:0;font-weight:600;font-size:.9rem}
+.registry-details a{display:inline-block;margin-top:22px;border-bottom:1px solid currentColor;padding-bottom:3px;color:var(--green);font-size:.85rem;font-weight:700}
+.registry-details a:hover,.registry-details a:focus-visible{color:var(--accent)}
+.registry-details dd a{margin:0;font-size:inherit;font-weight:inherit}
+@media(max-width:800px){.registry-section{grid-template-columns:1fr;gap:24px}}
+@media(max-width:480px){.registry-section{padding-left:20px;padding-right:20px}.registry-details dl div{grid-template-columns:1fr;gap:5px}}
