@@ -34,9 +34,11 @@ export default function Home() {
           <iframe
             title="Street View ved Orrfuglveien 10"
             src="https://www.google.com/maps/embed?pb=!4v1793787924927!6m8!1m7!1sUi22pjkXohwGgEOetazGMw!2m2!1d69.07701724540962!2d18.52321393000696!3f346.15088!4f0!5f0.7820865974627469"
-            allowFullScreen
+            loading="lazy"
             referrerPolicy="strict-origin-when-cross-origin"
+            tabIndex={-1}
           />
+          <a className="map-overlay-link" href="https://www.google.com/maps/search/?api=1&amp;query=Orrfuglveien+10%2C+9325+Bardufoss" target="_blank" rel="noopener noreferrer">Åpne i Google Maps</a>
           <span className="image-caption">Ved Orrfuglveien 10 · Google Street View, juli 2025</span>
         </div>
       </section>
